@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not show initially.
+  </div>
+  <script>
+    //Incorrect way to select the div - missing the #
+    let div = document.getElementsByTagName("div");
+    div.innerHTML = "This text will show after page loads.";
+  </script>
+</body>
+</html>
